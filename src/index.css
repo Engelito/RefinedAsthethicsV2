@@ -1,0 +1,104 @@
+/* */
+body{
+  background-color: white;
+}
+
+.navBar{
+  background-color: black;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 100px;
+  width: auto;
+  border-radius: 50%;
+  
+}
+.navLinks{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10%;
+}
+.navLinks li {
+  margin-left: 20px;
+}
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navLinks a:hover {
+  color: rgb(211, 202, 76);
+}
+
+.card{
+  /* The mentor likes using hsl values */
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  /* first value, horizontal offset, second  = vertical offset, third = blur */
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.10);
+  /* Padding is found between the elements*/
+  padding: 20px;
+  /* Margin is for the space outside the border*/
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  /* With more cards, inline-block will allow more to flow with the container*/
+  display: inline-block inline-block;
+
+
+}
+
+/* .card calls function .card-image grabs image class*/
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  
+}
+
+.card .card-title{
+  font-family: Arial, Helvetica, sans-serif;
+  /* To take away any */
+  margin: 0;
+  color: #a9aa62;
+
+}
+
+.card .card-text{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a9aa62b0;
+}
+
+.button{
+  background-color: rgb(119, 195, 201);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  /* Turns the arror to a hand when hovered over the button*/
+  cursor: pointer;
+
+}
+
+footer{
+  background-color: #a9aa62;
+  height: 40px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p{
+  margin-left: 20px;
+}

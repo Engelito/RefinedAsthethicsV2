@@ -1,0 +1,75 @@
+.pain-points-section {
+  padding: 5rem 2rem;
+  background-color: #ffffff; /* Changed to white for a clean look */
+}
+
+.pain-points-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.pain-points-image-wrapper {
+  flex: 1; /* Takes up half the space */
+  min-width: 40%;
+}
+
+.pain-points-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pain-points-content-wrapper {
+  flex: 1; /* Takes up the other half */
+}
+
+.pain-points-headline {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.pain-points-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pain-point-list-item {
+  display: flex;
+  align-items: flex-start; /* Aligns icon with the start of the text block */
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.pain-point-list-icon {
+  width: 20px;   /* Adjusted size */
+  height: 20px;  /* Adjusted size */
+  color: #61dafb;
+  margin-right: 1rem;
+  flex-shrink: 0; /* Prevents the icon from shrinking */
+  margin-top: 5px; /* Adjust vertical alignment */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pain-points-container {
+    flex-direction: column; /* Stack image on top of text */
+    text-align: center;
+  }
+  
+  .pain-points-headline {
+    font-size: 1.8rem;
+  }
+
+  .pain-point-list-item {
+    text-align: left; /* Keep list text left-aligned even when container is centered */
+  }
+}

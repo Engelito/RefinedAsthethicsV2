@@ -1,0 +1,3 @@
+{path: '/Home', element: <Home/>, errorElement: <div>404 Not Found</div>},
+      {path: '/Services', element:<Services/>, errorElement: <div>404 Not Found</div>},
+      {path: '/Contact', element:<Contact/>, errorElement: <div>404 Not Found</div>}
