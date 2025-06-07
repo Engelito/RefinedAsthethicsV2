@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Engelito.github.io/refinedAsthetics",
+  "homepage": "https://Engelito.github.io/RefinedAsthethicsV2",
   "type": "module",
   "scripts": {
     "dev": "vite",

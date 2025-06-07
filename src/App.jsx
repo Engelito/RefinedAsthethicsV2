@@ -9,7 +9,7 @@ import Merch from './Pages/Merch.jsx'
 
 import Footer from './Footer.jsx'
 import Food from './Food.jsx'
-import Card from './Card.jsx'
+
 import Button from './Button.jsx'
 
 
@@ -21,7 +21,7 @@ function App() {
     <NavBar/>
     <div className='container'>
       <Routes>
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/merch" element={<Merch/>}/>
