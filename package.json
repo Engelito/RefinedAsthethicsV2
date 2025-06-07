@@ -1,8 +1,8 @@
 {
   "name": "my-react-app",
+  "homepage": "https://Engelito.github.io/RefinedAsthethicsV2",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Engelito.github.io/RefinedAsthethicsV2",
   "type": "module",
   "scripts": {
     "dev": "vite",
