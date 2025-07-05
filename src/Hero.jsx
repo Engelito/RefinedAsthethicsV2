@@ -13,7 +13,7 @@ return(
             className={styles.heroImage}
         />
         <div className={styles.heroContent}>
-            <h1 className='styles.heroH1'>It's time to change</h1>
+            <h1>It's time to change</h1>
             <p>Let's begin with a free consultation</p>
             <button>Start Button</button>
         </div>

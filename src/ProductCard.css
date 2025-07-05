@@ -1,0 +1,59 @@
+.product-card {
+  background-color: #1e1e1e; /* A dark card background */
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures the image corners are rounded */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-container {
+  width: 100%;
+  height: 250px; /* Fixed height for all images */
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+.product-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  color: #c5a47e; /* Using your gold accent color */
+  margin: 0 0 20px 0;
+}
+
+.product-button {
+  background-color: #c5a47e;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #ffffff;
+}

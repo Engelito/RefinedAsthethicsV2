@@ -1,0 +1,94 @@
+/* src/components/ServiceList.css */
+
+.service-list-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.service-list-title {
+  color: #ffffff; /* Make the header text white */
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #c5a47e; /* The gold border remains */
+  padding-bottom: 10px;
+}
+
+/* NEW: Style for the group headings */
+.service-group-title {
+  font-size: 1.8em;
+  /* Use the deep teal here */
+  color: #c5a47e; 
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+
+.service-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-item {
+   background-color: #1e1e1e; /* Instead of #ffffff */
+  border: 1px solid #333; /* A darker border */
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  /* Add a left border for the new color, initially transparent */
+  border-left: 4px solid transparent; 
+  transition: all 0.3s ease; /* Transition all properties */
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+  /* The teal border appears on hover */
+  border-left: 4px solid #c5a47e;; 
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+/* UPDATED: Changed h3 to h4 to match the new JSX structure */
+.service-name {
+  font-size: 1.4em;
+  margin: 0;
+  color:#f4f4f7;
+}
+
+.service-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  /* Use the gold for the price text */
+  color: #c5a47e; 
+  white-space: nowrap;
+}
+.service-description {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0;
+  color: #f4f4f7;
+}
+
+@media (max-width: 600px) {
+  .service-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .service-name {
+    margin-bottom: 8px;
+  }
+}

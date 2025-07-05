@@ -1,0 +1,147 @@
+/* src/components/ComparisonTable.css */
+
+.comparison-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: sans-serif;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 16px;
+  border: 1px solid #bbbbbb;
+}
+
+.comparison-table thead th {
+  background-color: #474747;
+  border-bottom: 2px solid #ccc;
+}
+
+.feature-header {
+  background-color: #474747 !important;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.comparison-table h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #cfbe1f;
+}
+
+.price-desc {
+  font-size: 0.9em;
+  color: #777;
+  margin: 0;
+}
+
+/* Styles for features */
+.comparison-table tbody td {
+  background-color: #fff;
+}
+
+.comparison-table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+.checkmark {
+  color: #28a745; /* Green */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.cross {
+  color: #dc3545; /* Red */
+  font-size: 1.5em;
+}
+
+/* "Most Popular" highlight style */
+.popular {
+  border: 2px solid #007bff;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .comparison-table, .comparison-table thead, .comparison-table tbody, .comparison-table th, .comparison-table td, .comparison-table tr {
+    display: block;
+  }
+
+  .comparison-table thead {
+    display: none; /* Hide header on mobile */
+  }
+  
+  .comparison-table tr {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .comparison-table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  .comparison-table td:before {
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  /* This is a bit manual, but necessary for mobile table headers */
+  .comparison-table tbody tr td:nth-of-type(1):before { content: "Plan"; }
+  .comparison-table tbody tr td:nth-of-type(2):before { content: "Starter"; }
+  .comparison-table tbody tr td:nth-of-type(3):before { content: "Pro"; }
+  .comparison-table tbody tr td:nth-of-type(4):before { content: "Premium"; }
+  
+  .feature-header { display: none; }
+}

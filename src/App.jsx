@@ -7,6 +7,7 @@ import Services from './Pages/Services.jsx';
 import Contact from './Pages/Contact.jsx';
 import Merch from './Pages/Merch.jsx'
 
+
 import Footer from './Footer.jsx'
 import Food from './Food.jsx'
 
@@ -28,8 +29,6 @@ function App() {
       </Routes>
 
     </div>
-  
-    
     <Footer/>
     </>
   );

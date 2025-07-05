@@ -1,0 +1,39 @@
+.merch-page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  color: #E0E0E0;
+}
+
+.merch-page-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #c5a47e; /* Gold accent for the title */
+  text-align: center;
+}
+
+.merch-grid {
+  display: grid;
+  /* This creates 3 equal-width columns */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; /* This creates space between the cards */
+}
+
+
+/* --- RESPONSIVE STYLES --- */
+
+/* For tablets: Switch to 2 columns */
+@media (max-width: 992px) {
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For mobile phones: Switch to 1 column */
+@media (max-width: 768px) {
+  .merch-grid {
+    grid-template-columns: 1fr;
+  }
+}

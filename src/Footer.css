@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: #000000; /* The same black as your navbar */
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #333; /* A subtle separator line */
+}
+
+.social-icons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Space between the icons */
+}
+
+.social-icon {
+  color: #cccccc; /* The default soft gray color */
+  font-size: 2rem; /* Makes the icons larger */
+  transition: all 0.3s ease;
+}
+
+/* This is where your brand color comes in! */
+.social-icon:hover {
+  color: #c5a47e; /* The muted gold on hover */
+  transform: translateY(-5px); /* A slight lift effect */
+}
+
+.footer-text {
+  margin: 0;
+  color: #888; /* A dimmer gray for the copyright text */
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,6 +1,12 @@
+import React from 'react';
+import ServiceList from '../ServiceList';
+
 function Services(){
     return(
-        <h1>Services</h1>
+
+        <div className="Services">
+            <ServiceList />
+        </div>
     );
 
 }

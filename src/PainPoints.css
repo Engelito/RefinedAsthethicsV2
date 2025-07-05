@@ -1,6 +1,6 @@
 .pain-points-section {
   padding: 5rem 2rem;
-  background-color: #ffffff; /* Changed to white for a clean look */
+  background-color: #121212; /* Changed to white for a clean look */
 }
 
 .pain-points-container {
@@ -30,8 +30,9 @@
 .pain-points-headline {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #333;
+  color: #c5a47e;
   margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .pain-points-list {
@@ -46,13 +47,14 @@
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .pain-point-list-icon {
   width: 20px;   /* Adjusted size */
   height: 20px;  /* Adjusted size */
-  color: #61dafb;
+  color: #E0E0E0;
   margin-right: 1rem;
   flex-shrink: 0; /* Prevents the icon from shrinking */
   margin-top: 5px; /* Adjust vertical alignment */
