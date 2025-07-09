@@ -6,6 +6,7 @@ import Home from './Pages/Home.jsx';
 import Services from './Pages/Services.jsx';
 import Contact from './Pages/Contact.jsx';
 import Merch from './Pages/Merch.jsx'
+import ClientsPage from './Pages/ClientPage';
 
 
 import Footer from './Footer.jsx'
@@ -23,6 +24,7 @@ function App() {
     <div className='container'>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/clients" element={<ClientsPage />} />
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/merch" element={<Merch/>}/>

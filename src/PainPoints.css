@@ -12,15 +12,20 @@
 }
 
 .pain-points-image-wrapper {
-  flex: 1; /* Takes up half the space */
-  min-width: 40%;
+
+  /* flex: 1; Takes up half the space */
+  flex: flex; /* Enables flexbox for side by side layout */
+  gap: 20px;
+  width: 60%;
+  justify-content: center;
 }
 
 .pain-points-image {
-  width: 100%;
+  max-width: 45%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  
+  /*box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);*/
 }
 
 .pain-points-content-wrapper {

@@ -1,4 +1,5 @@
-import relatableImage from '../assets/clientSidePic.JPG';
+import relatableImage from '../assets/Clients/before.png';
+import relatableImage2 from '../assets/Clients/after.png';
 import '../PainPoints.css';
 // A simple checkmark icon component. We can reuse this.
 const CheckIcon = () => (
@@ -22,7 +23,8 @@ function PainPoints() {
       <div className="pain-points-container">
         {/* Image Column */}
         <div className="pain-points-image-wrapper">
-          <img src={relatableImage} alt="Person contemplating their career path" className="pain-points-image" />
+          <img src={relatableImage} alt="Garrett Murdoch before image" className="pain-points-image" />
+           <img src={relatableImage2} alt="Garrett Murdoch after image" className="pain-points-image" />
         </div>
 
         {/* Text Content Column */}

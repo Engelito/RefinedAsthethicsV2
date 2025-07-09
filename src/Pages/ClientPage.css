@@ -1,0 +1,29 @@
+.clients-page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  color: #E0E0E0;
+}
+
+.clients-page-container h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #c5a47e;
+  text-align: center;
+}
+
+.clients-grid {
+  display: grid;
+  /* This creates 2 columns for a better before/after view */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .clients-grid {
+    grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
+  }
+}

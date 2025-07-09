@@ -5,7 +5,7 @@ import HeroVideo from '../HeroVideo.jsx'; // Adjust path if needed
 function Home(){
     return(
         <>
-        <HeroVideo/>
+        <Hero/>
         <Side/>
         </>
     );

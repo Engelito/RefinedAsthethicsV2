@@ -11,6 +11,7 @@ function NavBar(){
         </NavLink>
          <ul className="navLinks">
                 <li><NavLink to="/" className='nav-link'>Home</NavLink></li>
+                <li><NavLink to="/clients" className="nav-link">Clients</NavLink></li>
                 <li><NavLink to="/Services" className='nav-link'>Services</NavLink></li>
                 <li><NavLink to="/Contact" className='nav-link'>Contact</NavLink></li>
                 <li><NavLink to="/Merch" className='nav-link'>Merch</NavLink></li>
