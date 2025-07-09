@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css'; // We will create this file next
 
 // Import the specific icons you want from the 'react-icons/fa' (Font Awesome) set
-import { FaInstagram, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa';
+import { FaInstagram, FaFacebookSquare, FaEnvelope, FaYoutubeSquare } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear(); // Automatically gets the current year
@@ -14,11 +14,15 @@ const Footer = () => {
         <a href="https://www.instagram.com/refined_coaching_aesthetics_/" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaInstagram />
         </a>
-        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <a href="https://www.facebook.com/garrett.murdoch.2025/" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaFacebookSquare />
         </a>
-        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <FaTwitterSquare />
+        <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <FaYoutubeSquare />
+        </a>
+         {/* 3. Add the link for Email */}
+        <a href="G_murdoch@live.com" className="social-icon">
+          <FaEnvelope />
         </a>
       </div>
       <p className="footer-text">

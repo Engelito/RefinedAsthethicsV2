@@ -4,6 +4,9 @@
   margin: 40px auto;
   color: #E0E0E0;
 }
+h1{
+  text-align: center;
+}
 
 .clients-page-container h1 {
   font-family: 'Montserrat', sans-serif;

@@ -9,6 +9,9 @@ import client0Before from "../assets/Clients/000Before.png"
 import client0After from "../assets/Clients/000After.png"
 import client2Before from "../assets/Clients/002Before.png"
 import client2After from "../assets/Clients/002After.png"
+import ContentVideo from '../Components/ContentVideo.jsx';
+
+import ClientVideo from '../assets/Clients/ClientVideo.mov';
 
 
 // Example:
@@ -40,6 +43,8 @@ const clientsData = [
 
 function ClientsPage() {
   return (
+    <>
+    
     <div className="clients-page-container">
       <h1>Client Transformations</h1>
       <div className="clients-grid">
@@ -53,7 +58,13 @@ function ClientsPage() {
           />
         ))}
       </div>
+      
     </div>
+    <h1>Hear the experience</h1>
+    <ContentVideo videoSrc={ClientVideo} />
+    
+    
+    </>
   );
 }
 

@@ -1,0 +1,16 @@
+.content-video-container {
+  /* Adds space above and below the video */
+  padding: 50px 0; 
+  display: flex;
+  justify-content: center; /* Centers the video horizontally */
+}
+
+.content-video {
+  /* This controls the size */
+  width: 60%;
+  max-width: 500px; /* Set a maximum width for the video */
+  
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  border: 1px solid #333; /* A subtle border for the dark theme */
+}
